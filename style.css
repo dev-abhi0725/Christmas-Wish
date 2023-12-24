@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background: url(christmas/images/home-bg.jpg) no-repeat;
+    object-fit: cover;
+}
+
+.tree{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    object-fit: cover;
+}
+.mountain{
+    position: absolute;
+    object-fit: cover;
+    bottom:0;
+    width: 100%;
+    height: 20rem;
+    z-index: 5;
+}
+.moon{
+    position: absolute;
+    width: 20vw;
+    left: 40%;
+    top: 5rem;
+    z-index: 1;
+}
+
+    
+.cloud1{
+    position: absolute;
+    top: 5rem;
+    /* right: 0; */
+    width: 40vw;
+    z-index: 2;
+    animation: cld1 calc(15s * var(--i)) alternate infinite ;
+}
+@keyframes cld1 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translate(30%);
+    }
+}
+
+.cloud2{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 30vw;
+    animation: cld2 calc(5s * var(--j)) alternate infinite ;
+
+}
+@keyframes cld2 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translate(30%);
+    }
+}
+.cloud3{
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    width: 40vw;
+    z-index: 2;
+    animation: cld3 calc(5s * var(--k)) alternate infinite ;
+}
+@keyframes cld3 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translate(25%);
+    }
+}
+.cloud4{
+    position: absolute;
+    top: 5rem;
+    right: 40%;
+    width: 20vw;
+    z-index: 2;
+    opacity: .5;
+    animation: cld4 calc(5s * var(--l)) alternate infinite ;
+}
+@keyframes cld4 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translate(20%);
+    }
+}
+.santaride{
+    position: absolute;
+    height: 8rem;
+    /* left: 35%; */
+    top: 9rem;
+    z-index: 2;
+    animation: santa 10s linear infinite;
+}
+@keyframes santa {
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+        animation-delay: 3s;
+    }
+    100%{
+        transform: translate(330%);
+        
+    }
+}
+.div-box{
+    display: flex;  
+    justify-content: center;
+    width: 100vw;
+    align-self:center;
+    z-index: 11;
+    
+}
+button{
+    
+    display: flex;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin-top: 70px;
+    font-size: 50px;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    
+}
+button:hover{
+    opacity: .4;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+

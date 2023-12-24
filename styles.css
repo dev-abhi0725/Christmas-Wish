@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background: url(christmas/images/home-bg.jpg) no-repeat;
+    object-fit: cover;
+}
+.santa{
+    /* width: ; */
+    /* height: 50%; */
+    width: 30vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    object-fit: cover;
+}
+.gift{
+    width: 20vw;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    object-fit: cover;
+    object-position: end;
+    bottom: 0;
+}
+.gift1{
+    width: 20vw;
+    position: absolute;
+    z-index: 3;
+    right: 30px;
+    object-fit: cover;
+    object-position: end;
+    bottom: 0;
+}
+.snowman{
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    /* object-fit: cover; */
+    /* bottom: 1; */
+    left: 40%;
+    top: 0;
+}
+.container{
+    position: absolute;
+    /* display: flex; */
+    top: 40%;
+    justify-content: center;
+    align-self: center;
+    /* border: solid blue; */
+    width: 500px;
+    left: 40%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    z-index: 4;
+}
+h1{
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    margin-top: 7px;
+    margin-bottom: 0;
+    
+}
+p{
+    font-family: 'Cedarville Cursive';
+    margin: 0;
+    font-size: 20px;
+    padding: 0;
+    font-weight: bold;
+    line-height: 30px;
+}
+span{
+    font-size: 25px;
+    font-weight: bold;
+}
